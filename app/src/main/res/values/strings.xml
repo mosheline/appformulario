@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">AppFormulariosKotlin</string>
     <string name="btnirregistro">REGISTRAR PERSONA</string>
+    <string name="valmasculino">Masculino</string>
+    <string name="valfemenino">Femenino</string>
+    <string name="valpreferencias">Seleccione sus preferencias:</string>
+    <string name="valdeporte">Deporte</string>
+    <string name="valmusica">Música</string>
+    <string name="valotros">Otras preferencias</string>
+    <string name="valnotificar">¿Notificar a usuario?</string>
+    <string name="valregistrarpersona">Registrar Persona</string>
+    <string name="vallistarpersonas">Listar Personas</string>
+    <string name="errorNombreApellido">Error al ingresar el nombre y/o apellido.</string>
+    <string name="errorValidarGenero">Es obligatorio seleccionar género</string>
+    <string name="errorEstadoCivil">Es obligatorio seleccionar el estado civil</string>
+    <string name="errorPreferencia">Debe seleccionar al menos una preferencia</string>
+    <string name="mensajeRegistro">Persona Registrada</string>
 </resources>

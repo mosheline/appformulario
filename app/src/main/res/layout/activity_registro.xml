@@ -24,7 +24,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -34,6 +34,7 @@
         android:id="@+id/imageView"
         android:layout_width="48dp"
         android:layout_height="47dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +44,7 @@
         android:id="@+id/etNombres"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Ingrese Nombre"
         android:inputType="text"
@@ -75,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etApellidos" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgGenero"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -88,14 +89,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Masculino" />
+            android:text="@string/valmasculino" />
 
         <RadioButton
             android:id="@+id/rbFemenino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Femenino" />
+            android:text="@string/valfemenino" />
     </RadioGroup>
 
     <TextView
@@ -103,10 +104,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Seleccione sus preferencias"
+        android:text="@string/valpreferencias"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/rgGenero" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -120,75 +121,78 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <CheckBox
-            android:id="@+id/chk1"
+            android:id="@+id/chkDeporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cine" />
+            android:text="@string/valdeporte" />
 
         <CheckBox
-            android:id="@+id/chk2"
+            android:id="@+id/chkMusica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Televisión" />
+            android:text="@string/valmusica" />
 
         <CheckBox
-            android:id="@+id/chk3"
+            android:id="@+id/chkOtros"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Teatro" />
+            android:text="@string/valotros" />
     </LinearLayout>
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spestadocivil"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:text="Seleccione su estado Civil"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swnotificacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Switch"
+        android:text="@string/valnotificar"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spestadocivil"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRegistrarPersona"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="24dp"
+        android:text="@string/valregistrarpersona"
         app:icon="@drawable/baseline_person_add_24"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/swnotificacion" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnListarPersonas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:text="@string/vallistarpersonas"
         app:icon="@drawable/baseline_save_24"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarPersona" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
