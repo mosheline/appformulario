@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "pe.edu.idat.appformularioskotlin"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "pe.edu.idat.appformularioskotlin"

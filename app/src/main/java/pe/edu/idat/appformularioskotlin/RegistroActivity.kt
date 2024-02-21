@@ -21,7 +21,7 @@ class RegistroActivity : AppCompatActivity(), View.OnClickListener, AdapterView.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistroBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_registro)
+        setContentView(binding.root)
 
         ArrayAdapter.createFromResource(
             applicationContext, R.array.estadocivil,
